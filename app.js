@@ -58,7 +58,7 @@ app.use(function (err, req, res, next) {
 
 
 mongoose
-  .connect("mongodb+srv://abdullah:<electricbazaar>@productscrud.8izbl.mongodb.net/test", {
+  .connect("mongodb+srv://abdullah:<electricbazaar>@productscrud.8izbl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
