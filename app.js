@@ -40,9 +40,6 @@ app.use('/', productsRouter);
 app.use('/', usersRouter);
 
 
-
-
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
@@ -60,9 +57,8 @@ app.use(function (err, req, res, next) {
 });
 
 
-
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/productscrud", {
+  .connect("mongodb+srv://abdullah:<electricbazaar>@productscrud.8izbl.mongodb.net/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
